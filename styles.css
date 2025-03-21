@@ -1,0 +1,273 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #FAF3E0; /* Cream white background */
+    color: #333333; /* Dark gray text */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(90deg, #E0C878, #B89A65); /* Softer gold gradient */
+    color: #333333;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.navbar a {
+    color: #FFFFFF; /* White text for contrast */
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #FAF3E0; /* Cream white on hover */
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px; /* Even spacing between links */
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.navbar .cta-button {
+    background: #FAF3E0; /* Cream white */
+    color: #333333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navbar .cta-button:hover {
+    background: #E0C878; /* Softer gold */
+    color: #FFFFFF;
+}
+
+/* Hero Section */
+.hero {
+    background: #FAF3E0;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #333333;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #555555;
+}
+
+.hero .cta-button {
+    background: linear-gradient(45deg, #E0C878, #B89A65); /* Softer gradient */
+    color: #FFFFFF;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Features Section */
+.features {
+    background: #FFFFFF;
+    padding: 50px 20px;
+}
+
+.features h2 {
+    color: #333333;
+}
+
+.feature-card {
+    background: #FAF3E0;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.feature-card img {
+    display: block;
+    max-width: 100%; /* Keep images proportional */
+    height: auto;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+/* Investment Opportunities Section */
+.investment-opportunities {
+    background: #FFFFFF;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.investment-opportunities h2 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: #333333;
+}
+
+.opportunity-grid {
+    display: flex; /* Use flexbox for horizontal layout */
+    flex-wrap: nowrap; /* Prevent wrapping to the next row */
+    gap: 20px; /* Space between items */
+    justify-content: space-evenly; /* Evenly distribute items */
+    overflow-x: auto; /* Enable horizontal scrolling if necessary */
+}
+
+.opportunity-card {
+    display: flex; /* Flexbox for each card to align image and text */
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center align content */
+    background: #FAF3E0;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    width: 300px; /* Fixed card width */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    flex-shrink: 0; /* Prevent cards from shrinking */
+}
+
+.opportunity-card img {
+    max-width: 100%; /* Images adjust to card size */
+    height: 150px; /* Fixed height for images */
+    object-fit: cover; /* Crop images to fit */
+    border-radius: 5px;
+    margin-bottom: 15px; /* Space between image and text */
+}
+
+.opportunity-card h3 {
+    font-size: 1.2rem;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.opportunity-card p {
+    font-size: 1rem;
+    color: #555555;
+    margin-bottom: 15px;
+}
+
+.opportunity-card .cta-button {
+    background: #E0C878;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.opportunity-card .cta-button:hover {
+    background: #B89A65;
+}
+
+.opportunity-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .opportunity-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+
+
+
+/* Insights Section */
+.insights {
+    background: #FAF3E0;
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 2px solid #E0C878; /* Softer gold border */
+}
+
+.insights h2 {
+    color: #333333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.insights .section-description {
+    color: #555555;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.graphs {
+    display: block; /* Ensure graphs span full width */
+    margin: 0 auto;
+}
+
+.graph-card {
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    max-width: 100%; /* Full-page graphs */
+    margin: 20px auto; /* Center each graph card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.graph-card img {
+    display: block;
+    max-width: 100%; /* Full-width graphs */
+    height: auto;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.graph-card p {
+    color: #333333;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.graph-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .investment-opportunities {
+        flex-direction: column; /* Stack cards on smaller screens */
+        align-items: center;
+    }
+
+    .opportunity-card {
+        width: 100%; /* Full width for smaller screens */
+    }
+}
